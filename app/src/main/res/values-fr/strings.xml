@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Challenge_ch5</string>
+    <string name="signin">Connexion</string>
+    <string name="signup" tools:ignore="UnusedResources">S’enregistrer</string>
+    <string name="login">Connectez-vous</string>
+    <string name="register">registre</string>
+    <string name="welcome">Bonjour, bienvenue!</string>
+    <string name="already" tools:ignore="UnusedResources">Déjà inscrit? Connexion!</string>
+    <string name="not_registered">Vous n’êtes pas encore inscrit? S’enregistrer!</string>
+    <string name="hello" tools:ignore="UnusedResources">Bonjour!</string>
+    <string name="home">domicile</string>
+    <string name="detail">détail</string>
+    <string name="enter_email">Entrez l’adresse e-mail</string>
+    <string name="enter_password">Entrez le mot de passe</string>
+    <string name="profile">profil</string>
+    <string name="username">nom d’utilisateur</string>
+    <string name="full_name">nom complet</string>
+    <string name="born_date">Date de naissance</string>
+    <string name="address">adresse</string>
+    <string name="update">mettre à jour</string>
+    <string name="logout">Déconnexion</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="movie_title">Titre du film</string>
+    <string name="movie_release">Sortie du film</string>
+    <string name="login_here">Connectez-vous ici!</string>
+</resources>
