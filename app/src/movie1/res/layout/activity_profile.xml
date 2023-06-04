@@ -65,11 +65,11 @@
         android:layout_marginTop="25dp">
 
         <EditText
-            android:backgroundTint="#DEFDE1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:backgroundTint="#DEFDE1"
             android:hint="@string/born_date"
-            tools:ignore="Autofill,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+            tools:ignore="Autofill,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ConfirmPassword"
