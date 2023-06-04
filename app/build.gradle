@@ -26,12 +26,12 @@ android {
 
     flavorDimensions("MovieApp")
     productFlavors{
-        userfree{
-            applicationIdSuffix".userfree"
+        movie1{
+            applicationIdSuffix".movie1"
             dimension"MovieApp"
         }
-        userpaid{
-            applicationIdSuffix".userpaid"
+        movie2{
+            applicationIdSuffix".movie2"
             dimension"MovieApp"
         }
     }

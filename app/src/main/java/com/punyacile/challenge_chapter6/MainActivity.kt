@@ -17,9 +17,9 @@ import com.punyacile.challenge_chapter6.databinding.ActivityMainBinding
     "MemberVisibilityCanBePrivate"
 )
 class MainActivity : AppCompatActivity() {
-     lateinit var binding: ActivityMainBinding
-     lateinit var auth: FirebaseAuth
-     lateinit var pref: SharedPreferences
+    lateinit var binding: ActivityMainBinding
+    lateinit var auth: FirebaseAuth
+    lateinit var pref: SharedPreferences
 
 
 
@@ -77,5 +77,17 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Login Failed, try again!", Toast.LENGTH_SHORT).show()
             }
         }
+
+        val pref = getSharedPreferences("login", Context.MODE_PRIVATE)
+
+        val intent: Intent = if (pref.contains("isUserLogin")) {
+            Intent(this, HomeActivity::class.java)
+        } else {
+            Intent(this, MainActivity::class.java)
+        }
+
+        startActivity(intent)
+        finish()
+
     }
 }

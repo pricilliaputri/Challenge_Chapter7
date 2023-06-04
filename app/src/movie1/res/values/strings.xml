@@ -5,7 +5,6 @@
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="welcome">Hi, welcome!</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false" tools:ignore="UnusedResources">Hello blank fragment</string>
     <string name="already" tools:ignore="UnusedResources">Already Registered? Sign In!</string>
     <string name="not_registered">Not Registered Yet? Sign Up!</string>

@@ -3,56 +3,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".RegisterActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="104dp"
-        android:text="@string/profile"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/register"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="124dp"
+        android:layout_height="111dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="140dp"
+        app:srcCompat="@drawable/dustbin" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/imageView"
         android:layout_alignParentEnd="true"
-        android:id="@+id/username"
+        android:id="@+id/user"
         android:layout_marginTop="25dp">
 
         <EditText
-            android:id="@+id/user"
-            android:backgroundTint="#DEFDE1"
+            android:id="@+id/usernameRegist"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:backgroundTint="#DEFDE1"
             android:hint="@string/username"
-            tools:ignore="Autofill,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+            tools:ignore="Autofill,SpeakableTextPresentCheck,TextFields" />
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
-        android:layout_below="@+id/username"
+        android:layout_below="@+id/user"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="25dp">
 
         <EditText
+            android:id="@+id/emailRegist"
             android:backgroundTint="#DEFDE1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/full_name"
-            tools:ignore="Autofill,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+            android:hint="@string/enter_email"
+            tools:ignore="Autofill,SpeakableTextPresentCheck,TextFields" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/RePass"
@@ -60,52 +75,67 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
+        app:endIconMode="password_toggle"
         android:layout_below="@+id/Email"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="25dp">
 
         <EditText
+            android:id="@+id/passRegist"
+            android:inputType="textPassword"
             android:backgroundTint="#DEFDE1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/born_date"
-            tools:ignore="Autofill,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+            android:hint="@string/enter_password"
+            tools:ignore="Autofill,SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
         android:layout_below="@+id/RePass"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="25dp"
+        >
 
         <EditText
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:backgroundTint="#DEFDE1"
             android:layout_height="match_parent"
-            android:hint="@string/address"
-            tools:ignore="Autofill,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+            android:hint="@string/confirm_password"
+            tools:ignore="Autofill,SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnUpdate"
-        android:layout_width="231dp"
+        android:id="@+id/buttonRegister"
+        android:layout_width="363dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ConfirmPassword"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="36dp"
-        android:text="@string/update" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/register" />
 
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="231dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnUpdate"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/logout" />
+    <TextView
+        android:id="@+id/registerLogin"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="-103dp"
+        android:layout_marginTop="636dp"
+        android:layout_marginBottom="47dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:text="@string/login_here"
+        android:textColor="@color/blue" />
 </RelativeLayout>

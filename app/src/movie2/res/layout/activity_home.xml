@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    android:layout_height="match_parent">
 
 
     <TextView
@@ -48,7 +47,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/baseline_person_24" />
 
     <ImageView
         android:id="@+id/homeFavorite"
@@ -57,7 +56,8 @@
         android:layout_marginStart="256dp"
         android:layout_marginTop="16dp"
         android:layout_toStartOf="@+id/imageView"
-        android:src="@drawable/favicon"
+        android:src="@drawable/fillicon"
+        app:layout_constraintRight_toLeftOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
